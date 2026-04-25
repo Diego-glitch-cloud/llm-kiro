@@ -1,0 +1,115 @@
+{
+  "games": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "title": "Elden Ring",
+      "description": "Un vasto mundo abierto de fantasía oscura creado por FromSoftware y George R.R. Martin. Explora las Tierras Intermedias, enfrenta jefes épicos y descubre una historia profunda llena de misterio.",
+      "price": 59.99,
+      "genre": "RPG",
+      "platform": "PC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+      "stock": 20
+    },
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "title": "God of War Ragnarök",
+      "description": "Kratos y Atreus emprenden un viaje épico por los Nueve Reinos nórdicos. Enfrenta dioses y monstruos mientras descubres los secretos del Ragnarök en esta aventura de acción cinematográfica.",
+      "price": 69.99,
+      "genre": "Action",
+      "platform": "PS5",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
+      "stock": 15
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "title": "FIFA 24",
+      "description": "La simulación de fútbol más completa del mundo. Juega con tus equipos favoritos en ligas oficiales, modos Ultimate Team y carreras de manager con gráficos y jugabilidad de última generación.",
+      "price": 49.99,
+      "genre": "Sports",
+      "platform": "Xbox",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/EA_Sports_FC_24_cover.jpg",
+      "stock": 30
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+      "title": "The Legend of Zelda: Tears of the Kingdom",
+      "description": "Link regresa a Hyrule en una aventura épica que expande el mundo de Breath of the Wild. Construye, vuela y explora cielos, tierras y profundidades en busca de la princesa Zelda.",
+      "price": 59.99,
+      "genre": "Adventure",
+      "platform": "Nintendo Switch",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/22/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg",
+      "stock": 25
+    },
+    {
+      "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+      "title": "Civilization VI",
+      "description": "Construye un imperio que resista el paso del tiempo. Lidera una civilización desde la Edad de Piedra hasta la Era de la Información, gestionando diplomacia, tecnología, cultura y guerra.",
+      "price": 29.99,
+      "genre": "Strategy",
+      "platform": "PC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Civilization_VI_cover_art.jpg",
+      "stock": 50
+    },
+    {
+      "id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+      "title": "Tetris Effect: Connected",
+      "description": "La experiencia Tetris más inmersiva jamás creada. Música y efectos visuales que responden a cada movimiento, con modos multijugador cooperativos y competitivos únicos.",
+      "price": 39.99,
+      "genre": "Puzzle",
+      "platform": "Xbox",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/4e/Tetris_Effect_Connected_cover.jpg",
+      "stock": 10
+    },
+    {
+      "id": "a7b8c9d0-e1f2-3456-abcd-567890123456",
+      "title": "Gran Turismo 7",
+      "description": "El simulador de conducción definitivo para PS5. Más de 400 autos licenciados, circuitos reales de todo el mundo y una física de conducción sin precedentes con soporte para DualSense.",
+      "price": 59.99,
+      "genre": "Racing",
+      "platform": "PS5",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a4/Gran_Turismo_7_cover.jpg",
+      "stock": 18
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4567-bcde-678901234567",
+      "title": "Street Fighter 6",
+      "description": "El regreso del rey de los juegos de lucha. Nuevos personajes, mecánicas revolucionarias de Drive System y un modo World Tour que te permite crear tu propio luchador y explorar el mundo.",
+      "price": 59.99,
+      "genre": "Fighting",
+      "platform": "PC",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3e/Street_Fighter_6_box_art.jpg",
+      "stock": 12
+    },
+    {
+      "id": "c9d0e1f2-a3b4-5678-cdef-789012345678",
+      "title": "Stardew Valley",
+      "description": "Hereda la granja de tu abuelo y construye la vida de tus sueños en el campo. Cultiva, cría animales, explora minas, haz amigos y descubre los secretos del Valle Stardew.",
+      "price": 14.99,
+      "genre": "Simulation",
+      "platform": "Nintendo Switch",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
+      "stock": 0
+    },
+    {
+      "id": "d0e1f2a3-b4c5-6789-defa-890123456789",
+      "title": "Resident Evil Village",
+      "description": "Ethan Winters llega a un misterioso pueblo europeo en busca de su hija. Enfrenta horrores sobrenaturales, criaturas aterradoras y la enigmática Lady Dimitrescu en esta experiencia de terror en primera persona.",
+      "price": 39.99,
+      "genre": "Horror",
+      "platform": "PS5",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7b/Resident_Evil_Village.jpg",
+      "stock": 8
+    },
+    {
+      "id": "e1f2a3b4-c5d6-7890-efab-901234567890",
+      "title": "Halo Infinite",
+      "description": "Master Chief regresa en la aventura más ambiciosa de la saga Halo. Explora un mundo abierto en el anillo Zeta, enfrenta a los Banished y descubre el misterio del Arma en este shooter épico.",
+      "price": 49.99,
+      "genre": "Action",
+      "platform": "Xbox",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/5e/Halo_Infinite_cover_art.jpg",
+      "stock": 22
+    }
+  ],
+  "orders": []
+}
