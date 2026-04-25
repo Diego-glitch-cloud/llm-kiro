@@ -264,20 +264,20 @@ Implementación full stack de una tienda de videojuegos con React/TypeScript (fr
     - **Validates: Requirements 3.1, 3.2**
     - Archivo: `frontend/src/__tests__/components/CheckoutForm.test.tsx`
 
-- [ ] 13. Implementar páginas y routing (frontend)
-  - [-] 13.1 Crear `frontend/src/pages/HomePage.tsx`
+- [x] 13. Implementar páginas y routing (frontend)
+  - [x] 13.1 Crear `frontend/src/pages/HomePage.tsx`
     - Componer `GameCatalog` con `useGames` para mostrar el catálogo completo con filtros
     - _Requirements: 1.2, 1.3, 1.4_
 
-  - [~] 13.2 Crear `frontend/src/pages/GameDetailPage.tsx`
+  - [x] 13.2 Crear `frontend/src/pages/GameDetailPage.tsx`
     - Obtener el `id` de la URL, llamar a `api.fetchGame(id)` y renderizar `GameDetail`
     - _Requirements: 1.5_
 
-  - [~] 13.3 Crear `frontend/src/pages/OrderConfirmationPage.tsx`
+  - [x] 13.3 Crear `frontend/src/pages/OrderConfirmationPage.tsx`
     - Mostrar número de Order y resumen de la compra tras checkout exitoso
     - _Requirements: 3.9_
 
-  - [~] 13.4 Configurar React Router en `frontend/src/App.tsx`
+  - [x] 13.4 Configurar React Router en `frontend/src/App.tsx`
     - Definir rutas: `/` → `HomePage`, `/games/:id` → `GameDetailPage`, `/orders/:id` → `OrderConfirmationPage`
     - Integrar `CartDrawer` y `CartIcon` en el layout principal
     - _Requirements: 1.2, 1.5, 3.9_
@@ -287,21 +287,21 @@ Implementación full stack de una tienda de videojuegos con React/TypeScript (fr
     - **Validates: Requirements 3.9**
     - Archivo: `frontend/src/__tests__/hooks/useCheckout.test.ts`
 
-- [~] 14. Checkpoint — Frontend completo
+- [x] 14. Checkpoint — Frontend completo
   - Ejecutar `npm test` en `frontend/` y verificar que todos los tests pasan
   - Verificar que el carrito persiste en localStorage al recargar la página
   - Preguntar al usuario si hay dudas antes de continuar con Docker
 
-- [ ] 15. Configurar infraestructura Docker
-  - [~] 15.1 Crear `backend/Dockerfile`
+- [x] 15. Configurar infraestructura Docker
+  - [x] 15.1 Crear `backend/Dockerfile`
     - Imagen base Node.js, instalar dependencias, compilar TypeScript, exponer puerto 3001
     - _Requirements: 6.1, 6.3_
 
-  - [~] 15.2 Crear `frontend/Dockerfile`
+  - [x] 15.2 Crear `frontend/Dockerfile`
     - Imagen base Node.js con Vite, instalar dependencias, exponer puerto 3000 con soporte de hot-reload
     - _Requirements: 6.1, 6.4, 6.6_
 
-  - [~] 15.3 Crear `docker-compose.yml` en la raíz
+  - [x] 15.3 Crear `docker-compose.yml` en la raíz
     - Definir servicio `backend` en puerto 3001 con volumen para `data.json` (persistencia entre reinicios)
     - Definir servicio `frontend` en puerto 3000 con dependencia en `backend`
     - _Requirements: 6.1, 6.2, 6.3, 6.4, 6.5_
@@ -320,7 +320,7 @@ Implementación full stack de una tienda de videojuegos con React/TypeScript (fr
     - **Validates: Requirements 3.2, 3.7, 3.8, 5.3**
     - Archivo: `backend/src/__tests__/integration/orders.test.ts`
 
-- [~] 17. Checkpoint final — Verificar integración completa
+- [x] 17. Checkpoint final — Verificar integración completa
   - Ejecutar todos los tests (`npm test` en `backend/` y `frontend/`)
   - Verificar que `docker compose up --build -d` levanta ambos servicios sin errores
   - Verificar que el frontend en `localhost:3000` consume correctamente la API en `localhost:3001`
