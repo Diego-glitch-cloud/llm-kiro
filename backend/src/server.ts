@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 import { corsMiddleware } from './middleware/cors';
 import { errorHandler } from './middleware/errorHandler';
 import gamesRouter from './routes/games';
@@ -10,6 +11,9 @@ const app = express();
 // Middleware
 app.use(corsMiddleware);
 app.use(express.json());
+
+// Serve local images from backend/img/
+app.use('/img', express.static(path.join(__dirname, '../img')));
 
 // Routes
 app.use('/api/games', gamesRouter);
