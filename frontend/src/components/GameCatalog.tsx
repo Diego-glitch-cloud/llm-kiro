@@ -25,27 +25,43 @@ export function GameCatalog({ games }: GameCatalogProps) {
 
   return (
     <div>
-      <div>
-        <input
-          type="text"
-          placeholder="Buscar por título"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        />
-        <select value={genreFilter} onChange={(e) => setGenreFilter(e.target.value)}>
-          <option value="">Todos los géneros</option>
-          {genres.map((genre) => (
-            <option key={genre} value={genre}>{genre}</option>
-          ))}
-        </select>
-        <select value={platformFilter} onChange={(e) => setPlatformFilter(e.target.value)}>
-          <option value="">Todas las plataformas</option>
-          {platforms.map((platform) => (
-            <option key={platform} value={platform}>{platform}</option>
-          ))}
-        </select>
+      <div className="catalog-header">
+        <h2 className="catalog-title">Catálogo de Juegos</h2>
+        <div className="catalog-filters">
+          <input
+            className="filter-input"
+            type="text"
+            placeholder="🔍  Buscar por título..."
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <select
+            className="filter-select"
+            value={genreFilter}
+            onChange={(e) => setGenreFilter(e.target.value)}
+          >
+            <option value="">Todos los géneros</option>
+            {genres.map((genre) => (
+              <option key={genre} value={genre}>{genre}</option>
+            ))}
+          </select>
+          <select
+            className="filter-select"
+            value={platformFilter}
+            onChange={(e) => setPlatformFilter(e.target.value)}
+          >
+            <option value="">Todas las plataformas</option>
+            {platforms.map((platform) => (
+              <option key={platform} value={platform}>{platform}</option>
+            ))}
+          </select>
+        </div>
+        <p className="catalog-count">
+          Mostrando <strong>{filtered.length}</strong> de {games.length} juegos
+        </p>
       </div>
-      <div>
+
+      <div className="game-grid">
         {filtered.map((game) => (
           <GameCard key={game.id} game={game} onAddToCart={addToCart} />
         ))}

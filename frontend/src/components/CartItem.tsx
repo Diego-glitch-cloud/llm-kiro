@@ -11,41 +11,35 @@ export function CartItemComponent({ item }: CartItemProps) {
   const subtotal = (game.price * quantity).toFixed(2);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.75rem 0', borderBottom: '1px solid #e2e8f0' }}>
-      <div style={{ flex: 1 }}>
-        <p style={{ margin: 0, fontWeight: 'bold' }}>{game.title}</p>
-        <p style={{ margin: 0, color: '#718096', fontSize: '0.875rem' }}>${game.price.toFixed(2)} c/u</p>
+    <div className="cart-item">
+      <div className="cart-item-info">
+        <p className="cart-item-title">{game.title}</p>
+        <p className="cart-item-price">${game.price.toFixed(2)} c/u</p>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+      <div className="cart-item-qty">
         <button
+          className="qty-btn"
           onClick={() => updateQuantity(game.id, quantity - 1)}
           disabled={quantity <= 1}
           aria-label="Decrementar cantidad"
-          style={{ width: '28px', height: '28px', cursor: quantity <= 1 ? 'not-allowed' : 'pointer' }}
-        >
-          -
-        </button>
-        <span>{quantity}</span>
+        >−</button>
+        <span className="qty-value">{quantity}</span>
         <button
+          className="qty-btn"
           onClick={() => updateQuantity(game.id, quantity + 1)}
           disabled={quantity >= game.stock}
           aria-label="Incrementar cantidad"
-          style={{ width: '28px', height: '28px', cursor: quantity >= game.stock ? 'not-allowed' : 'pointer' }}
-        >
-          +
-        </button>
+        >+</button>
       </div>
 
-      <p style={{ margin: 0, minWidth: '60px', textAlign: 'right' }}>${subtotal}</p>
+      <span className="cart-item-subtotal">${subtotal}</span>
 
       <button
+        className="cart-item-remove"
         onClick={() => removeFromCart(game.id)}
         aria-label={`Eliminar ${game.title}`}
-        style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#e53e3e' }}
-      >
-        Eliminar
-      </button>
+      >✕</button>
     </div>
   );
 }

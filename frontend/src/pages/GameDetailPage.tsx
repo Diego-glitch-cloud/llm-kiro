@@ -18,21 +18,28 @@ export function GameDetailPage() {
     setLoading(true);
     setError(null);
     fetchGame(id)
-      .then((data) => {
-        if (!cancelled) setGame(data);
-      })
-      .catch((err: unknown) => {
-        if (!cancelled) setError(err instanceof Error ? err.message : 'Error desconocido');
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
-      });
+      .then((data) => { if (!cancelled) setGame(data); })
+      .catch((err: unknown) => { if (!cancelled) setError(err instanceof Error ? err.message : 'Error desconocido'); })
+      .finally(() => { if (!cancelled) setLoading(false); });
     return () => { cancelled = true; };
   }, [id]);
 
-  if (loading) return <p>Cargando juego...</p>;
-  if (error) return <p role="alert" style={{ color: 'red' }}>Error: {error}</p>;
-  if (!game) return <p>Juego no encontrado.</p>;
+  if (loading) {
+    return (
+      <div className="state-center">
+        <div className="spinner" />
+        <p>Cargando juego...</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return <div className="error-state">⚠️ {error}</div>;
+  }
+
+  if (!game) {
+    return <div className="error-state">Juego no encontrado.</div>;
+  }
 
   return <GameDetail game={game} onAddToCart={addToCart} />;
 }

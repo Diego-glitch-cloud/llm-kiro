@@ -19,9 +19,9 @@ function AppLayout() {
 
   return (
     <div>
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', borderBottom: '1px solid #e2e8f0' }}>
-        <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <h1 style={{ margin: 0, fontSize: '1.5rem' }}>Videogame Store</h1>
+      <header className="app-header">
+        <a href="/" className="app-logo">
+          <span>🎮</span> Videogame Store
         </a>
         <CartIcon onClick={() => setCartOpen(true)} />
       </header>
@@ -32,7 +32,7 @@ function AppLayout() {
         onCheckout={handleCheckout}
       />
 
-      <main style={{ padding: '1rem' }}>
+      <main className="app-main">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/games/:id" element={<GameDetailPage />} />
